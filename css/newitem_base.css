@@ -1,0 +1,49 @@
+.container {
+    width: 100%;
+    margin-top: 1em;
+    float: center;
+    place-items: center;
+    display: grid;
+}
+
+.formContainer {
+    width: 20%;
+    padding: 1em 0 1em 0;
+    place-items: center;
+    display: grid;
+    background-color: whitesmoke;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.targetForm {
+    width: 75%;
+}
+
+#submit {
+    background-color: #424242;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 0 auto;
+    padding: .5em 1em .5em 1em;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+    color: #03A9F4;
+    transition: .2s ease-in-out;
+}
+
+#buttonHolder {
+    float: center;
+}
+
+.targetForm > input {
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+#uuid {
+    background-color: #E9ECEF;
+}

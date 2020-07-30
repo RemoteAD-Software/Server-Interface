@@ -1,0 +1,45 @@
+.popupWrapper {
+    position: absolute;
+    z-index: 10;
+    min-width: 20%;
+    width: auto;
+    left: calc(50% - (20% / 2));
+    background-color: whitesmoke;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    border-radius: 3px;
+    padding: 1em 1em 1em 1em;
+    top: 10%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+body > * {
+    transition: all 0.3s ease;
+}
+
+.blur {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    pointer-events: none;
+}
+
+#submit {
+    background-color: #424242;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 0 auto;
+    padding: .5em 1em .5em 1em;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+    color: #03A9F4;
+    transition: .2s ease-in-out;
+}
+
+.buttonHolder {
+    margin-top: .5em;
+    float: center;
+}

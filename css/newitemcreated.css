@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 1em 0 1em 0;
+    margin-top: 1em;
+
+}
+
+.success {
+    width: 30%;
+    background-color: whitesmoke;
+    display: grid;
+    place-items: center;
+    padding: 1em 0 1em 0;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    border-spacing: 0;
+}
+
+.target {
+    border-spacing: 0;
+}
+
+td.left {
+    border-right: 2px solid black;
+    padding-right: 10px;
+}
+
+td.right {
+    padding-left: 10px;
+}
