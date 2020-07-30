@@ -13,3 +13,28 @@ function editButtonClicked(element) {
     open(id, name, city, street, streetNumber, postal, country, description);
 }
 
+function removeButtonClicked(element) {
+    var tr = element.parentElement.parentElement;
+
+    var id  = $.trim(tr.querySelector("#id").innerHTML);
+
+    $.ajax({
+        method: "POST",
+        url: "backend/removeLocation.php",
+        data: {
+            "id": id
+        }
+    }).done(function(msg) {
+        
+        if(msg != "OK") {
+            alert("Clients are still asigned to this location:\n" + msg);
+        } else {
+            sleep(50).then(() => {
+                document.location.reload(true);
+                return false;
+            });
+        }
+    })
+
+
+}

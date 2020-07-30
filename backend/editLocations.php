@@ -15,7 +15,4 @@ $push_stmt = "UPDATE locations SET locationName = \"${name}\", city = \"${city}\
 
 $updateLocation = $handle->prepare($push_stmt);
 $updateLocation->execute();
-
-echo $push_stmt;
-
 ?>

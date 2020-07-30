@@ -3,14 +3,14 @@
 <table class="navTable">
     <tr>
         <td class="alignLeft navTd">
-            <a href="index.php" class="siteTitle"> RemoteAD Video Panel </a>
+            <a href="index.php" class="siteTitle"> RemoteAD Control Panel </a>
         </td>
         <td class="navTd">
             <ul class="navigation">
                 <li class="navLi"><a href="/videos.php"> Videos </a></li>
-                <li class="navli"><a href="/statistics.php"> Statistics </a></li>
-                <li class="navli"><a href="/clients.php"> Clients </a></li>
-                <li class="navli"><a href="/locations.php"> Locations </a></li>
+                <li class="navLi"><a href="/statistics.php"> Statistics </a></li>
+                <li class="navLi"><a href="/clients.php"> Clients </a></li>
+                <li class="navLi"><a href="/locations.php"> Locations </a></li>
             </ul>
         </td>
     </tr>

@@ -1,4 +1,5 @@
-<html lang="en_us">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title> RemoteAD - Location created </title>
         <!-- Page specific CSS -->

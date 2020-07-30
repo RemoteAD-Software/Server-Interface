@@ -1,8 +1,14 @@
-<html lang="en_us">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title> RemoteAD Clients</title>
         <!-- CSS Page specific -->
         <link rel="stylesheet" type="text/css" href="css/tables.css">
+
+        <!-- Page specific scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/clientsButton.js"></script>
+        <script src="js/editClientPopup.js"></script>
 
     </head>
     <body>
@@ -13,8 +19,8 @@
         <div class="container">
             <div class="formHolder">
                 <table class="targetTable">
-                    <th> Client Location </th>
-                    <th> Client Sublocation </th>
+                    <th> Location </th>
+                    <th> Sublocation </th>
                     <th> Description </th>
                     <th> Client ID </th>
                     
@@ -24,5 +30,7 @@
                 </table> 
             </div>
         </div>
+
+        <?php include "subpages/editClient.php" ?>
     </body>
 </html>

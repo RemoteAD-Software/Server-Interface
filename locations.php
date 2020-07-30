@@ -1,4 +1,5 @@
-<html lang="en_us">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title> RemoteAD - Locations </title>
         <!-- CSS Page specific -->
@@ -17,7 +18,7 @@
         <div class="container">
             <div class="formHolder">
                 <table class="targetTable">
-                    <th> Location Name</th>
+                    <th> Name</th>
                     <th> City</th>
                     <th> Street </th>
                     <th> Number </th>

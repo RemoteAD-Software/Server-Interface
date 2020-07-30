@@ -8,15 +8,21 @@ $getVideos->execute();
 
 $videos = $getVideos->fetchAll();
 
-foreach($videos as $video) {
-    $platform = $video['platform'];
-    $key = $video['videoKey'];
-    $length = $video['length'];
+if(sizeof($videos) === 0) {
+    echo "<tr class=\"targetTr\"><td class=\"rightest\"> No Videos found</td></tr>";
 
-    echo
-    "<tr class=\"targetTr\">
-        <td>${platform}</td>
-        <td>${key}</td>
-        <td class=\"rightest\">${length} seconds </td>
-    </tr>";
+} else {
+
+    foreach($videos as $video) {
+        $platform = $video['platform'];
+        $key = $video['videoKey'];
+        $length = $video['length'];
+    
+        echo
+        "<tr class=\"targetTr\">
+            <td>${platform}</td>
+            <td>${key}</td>
+            <td class=\"rightest\">${length} seconds </td>
+        </tr>";
+    }
 }

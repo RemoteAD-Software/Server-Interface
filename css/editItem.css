@@ -18,13 +18,25 @@ body > * {
     transition: all 0.3s ease;
 }
 
+.editForm > input {
+    width: 130%;
+}
+
+.popupFormHolder {
+    width: 100%;
+}
+
+#editForm {
+    width: 100%;
+}
+
 .blur {
     filter: blur(2px);
     -webkit-filter: blur(2px);
     pointer-events: none;
 }
 
-#submit {
+.btn {
     background-color: #424242;
     border: none;
     border-radius: 5px;
@@ -33,7 +45,7 @@ body > * {
     padding: .5em 1em .5em 1em;
 }
 
-#submit:hover {
+.btn:hover {
     transform: scale(1.05);
     color: #03A9F4;
     transition: .2s ease-in-out;
@@ -42,4 +54,8 @@ body > * {
 .buttonHolder {
     margin-top: .5em;
     float: center;
+}
+
+.readonly {
+    background-color: #E9ECEF;
 }

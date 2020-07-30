@@ -9,14 +9,19 @@ $getStats->execute();
 
 $stats = $getStats->fetchAll();
 
-foreach($stats as $stat) {
-    $key = $stat['videoKey'];
-    $played = $stat['timesPlayed'];
-
-    echo 
-    "<tr class=\"targetTr\">
-        <td>${key}</td>
-        <td class=\"rightest\">${played}</td>
-    </tr>";
+if(sizeof($stats) === 0) {
+    echo "<tr class=\"targetTr\"><td class=\"rightest\"> No Statistics found</td></tr>";
+} else {
+    foreach($stats as $stat) {
+        $key = $stat['videoKey'];
+        $played = $stat['timesPlayed'];
+    
+        echo 
+        "<tr class=\"targetTr\">
+            <td>${key}</td>
+            <td class=\"rightest\">${played}</td>
+        </tr>";
+    }
 }
+
 ?>
